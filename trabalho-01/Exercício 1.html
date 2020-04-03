@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.ic.unicamp.br/~wainer/cursos/1s2020/430/ex1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><link type="text/css" id="dark-mode" rel="stylesheet" href="https://www.ic.unicamp.br/~wainer/cursos/1s2020/430/ex1.html"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Exercício 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body data-gr-c-s-loaded="true">
+<header>
+<h1 class="title">Exercício 1</h1>
+</header>
+<h1 id="exercicio-1">Exercicio 1</h1>
+<p>pode ser feito individualmente ou em pares</p>
+<p>Para ser entregue via email como um PDF com as computações, os resultados e suas discussões.</p>
+<p>Data de entrega: 3/3 até 11:59 da noite.</p>
+<p>Para fazer esse e os outros exercícios eu sugiro usar o R. É possível usar Python e o pacote <a href="https://www.statsmodels.org/stable/index.html">Statmodels</a>. Usando o Python use por exemplo um notebook Jupyter para os resultados. É possível também usar o Jupyter com o R como ambiente de execução <a href="https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/" class="uri">https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/</a>. O RStudio também tem um ambiente de notebook <a href="https://rmarkdown.rstudio.com/" class="uri">https://rmarkdown.rstudio.com/</a></p>
+<h2 id="poucos-dados-não-pareado">Poucos dados, não pareado</h2>
+<p>Os arquivos <a href="https://www.ic.unicamp.br/~wainer/cursos/1s2020/430/a1.csv">a1.csv</a> e <a href="https://www.ic.unicamp.br/~wainer/cursos/1s2020/430/b1.csv">b1.csv</a> contém um conjunto de medidas cada um.</p>
+<ol type="1">
+<li>Use os seguintes testes</li>
+</ol>
+<ul>
+<li><p>teste t</p></li>
+<li><p>Wilcoxon rank sum</p></li>
+</ul>
+<p>e reporte o p-valor.</p>
+<ol start="2" type="1">
+<li>Gere um histograma dos dois dados e verifique se eles “se parecem” com Gaussianas. Tendo em vista esse resultado e o tamanho dos dados, quais dos dois valores de p-valor voce deve confiar. Eu não acho que há uma resposta correta para essa pergunta, mas eu gostaria de saber seus argumentos para a sua resposta</li>
+</ol>
+<h2 id="poucos-dados-pareados">Poucos dados, pareados</h2>
+<p>O arquivo <a href="https://www.ic.unicamp.br/~wainer/cursos/1s2020/430/paired.csv">paired.csv</a> contem um conjunto de dados pareados, onde cada coluna é um grupo e as linhas o pareamento.</p>
+<p>Rode os seguintes algoritmos</p>
+<ul>
+<li>teste t pareado</li>
+<li>Wilcoxon signed rank (a versão pareada do Wilcoxon sum rank).</li>
+</ul>
+<ol start="3" type="1">
+<li><p>Compare os dos p-valores. Discuta se voce tem uma opinião sobre quais dos dois usar. De novo eu não sei se há uma resposta certa para essa pergunta.</p></li>
+<li><p>Rode a versão não pareada do teste t e do Wilcoxon. A versão não pareada deve ser mais fraca (poder menor - maior p-valor) que as versões pareadas dos algoritmos. Verifique que isso é verdade.</p></li>
+</ol>
+<h2 id="estudo-dos-fatores-que-influenciam-o-p-valor.">Estudo dos fatores que influenciam o p-valor.</h2>
+<p>Gere 2 conjuntos de 15 dados amostrados de uma normal de media 10 e 13, ambos com desvio padrão de 5.</p>
+<ol start="5" type="1">
+<li><p>Calcule a media do p-valor usando o teste t para 50 repetições dos pares descritos acima.</p></li>
+<li><p>Calcule a media do p-valor para o teste t para 50 repetições dos pares acima, mas com 25 dados cada</p></li>
+<li><p>Calcule a media do p-valor para o teste t para 50 repetições dos pares acima, com 15 dados cada mas com 10 como desvio padrão</p></li>
+<li><p>Calcule a media do p-valor para o teste t para 50 repetições dos pares acima, com 15 dados, 5 de desvio padrão mas com medias 10 e 17.</p></li>
+<li><p>Discuta a influencia dos 3 fatores no p-valor: numero de dados, ruído dos dados (o desvio padrão das fontes) e “tamanho da diferença” entre as fontes (diferença entre as médias)</p></li>
+</ol>
+
+
+<style>.lXvAzWdsJAPzcLK { color:#00acdb !important; } 
+.lXvAzWdsJAPzcLK.ba-outline { outline-color:#00acdb } 
+.lXvAzWdsJAPzcLK.TnX3i6iwXH3bP:hover, .lXvAzWdsJAPzcLK.TnX3i6iwXH3bP.active { color:#0098c2 !important; }
+.xlda2n556Y0tRVQ { background-color:#00acdb !important; }
+.xlda2n556Y0tRVQ.TnX3i6iwXH3bP:hover, .xlda2n556Y0tRVQ.TnX3i6iwXH3bP.active { background:#0098c2 !important; }
+.ba-border-primary { border-color:#0098c2 !important }
+.M8DlQkZu5Ur { background:#f6a800 !important; color:white !important; }
+.M8DlQkZu5Ur.TnX3i6iwXH3bP:hover, .M8DlQkZu5Ur.TnX3i6iwXH3bP.active { background:#ab7500 !important; }
+.ba-color-secondary { color:#f6a800 !important;  }
+.ba-color-secondary.TnX3i6iwXH3bP:hover, .ba-color-secondary.TnX3i6iwXH3bP.active { color:#ab7500 !important; }
+.ba-color-tertiary { color:#f6a800 !important }
+.ba-color-tertiary.TnX3i6iwXH3bP:hover, .ba-color-tertiary.TnX3i6iwXH3bP.active { color:#ab7500 !important }
+.I0vIidgjrjVdupMy { background:#f6a800 !important }
+.ba-bg-tertiary.TnX3i6iwXH3bP:hover, .ba-bg-tertiary.TnX3i6iwXH3bP.active { background:#ab7500 !important }</style></body><evlist></evlist></html>
